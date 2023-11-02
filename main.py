@@ -14,15 +14,10 @@ def guess_the_number():
     guess = int(input("Guess the number (1-10): "))
     attempts += 1
 
-    # implement a if-else statement
-    if guess < target_number:# Fix code
+    if guess < target_number:
       print("Too low. Try Again")
     elif guess > target_number:
       print("Too high. Try Again")
-      # if guess is less than target_number
-      # print "Too low. Try again."
-      # else if guess is greater than target_number
-      # print "Too high. Try again."
     else:
       print(f"Congratulations! You guessed the number ({target_number}) in {attempts} attempts.")
       break
