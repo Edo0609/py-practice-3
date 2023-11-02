@@ -15,12 +15,14 @@ def guess_the_number():
     attempts += 1
 
     # implement a if-else statement
-    if guess: # Fix code
+    if guess < target_number:# Fix code
+      print("Too low. Try Again")
+    elif guess > target_number:
+      print("Too high. Try Again")
       # if guess is less than target_number
       # print "Too low. Try again."
       # else if guess is greater than target_number
       # print "Too high. Try again."
-      print("Try again.")
     else:
       print(f"Congratulations! You guessed the number ({target_number}) in {attempts} attempts.")
       break
