@@ -30,8 +30,10 @@ def multiplication_table():
   # Fix code
   # implement a for loop
   i = 1 # fix code
-  result = number * i # fix code
-  print(f"{number} x {i} = {result}")
+  for i in range(11):
+    result = number * i # fix code
+    print(f"{number} x {i} = {result}")
+    
 
 
 def basic_calculator():
